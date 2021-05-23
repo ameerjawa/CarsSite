@@ -1,0 +1,108 @@
+/* --------------------------------Styles------------------------------------------ */
+/* Flex gallery Settings */ 
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+/* Boxes Styles and Settings */ 
+
+.box {
+  background-color: grey;
+  position: relative;
+  width: 30%;
+  height: 20%;
+  margin: 10px;
+  border: white 0.5px solid;
+  border-radius: 10px;
+  box-shadow: -15px 15px 5px rgba(0, 0, 0, 0.5);
+}
+/* Boxes images Styles and Settings */ 
+.box img {
+  transition: transform 2s;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+/* the hidden name of the car styles and settings*/ 
+.namecar {
+  font-size: 20px;
+  font-family: "Dancing Script", cursive;
+
+  position: absolute;
+  top: 65px;
+  left: 120px;
+
+  transform: scaleY(0);
+  transition: transform 0.5s;
+  font-weight: bold;
+}
+/* start with hover  */ 
+.box:hover {
+  border: 0px;
+}
+.box:hover img {
+  transform: scale(1.07);
+  opacity: 0.6;
+}
+.box:hover .namecar {
+  transform: scaleY(1);
+}
+
+
+/* Responsive Settings and @media*/
+
+@media all and (max-width: 750px) {
+  li a {
+    display: inline-block;
+  }
+}
+
+@media all and (max-width: 860px) {
+  .box {
+    height: 10%;
+  }
+}
+@media all and (max-width: 830px) {
+  header {
+    height: 200px;
+  }
+}
+
+@media all and (max-width: 1092px) {
+  li a {
+    margin: 10px;
+  }
+}
+
+@media all and (max-width: 950px) {
+  li a {
+    margin: 2px;
+  }
+
+  main {
+    margin-top: 70px;
+  }
+}
+@media all and (max-width: 750px) {
+  footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  footer li a {
+    margin: 10px;
+  }
+}
+
+@media all and (max-width: 280px) {
+  footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  footer li a {
+    margin: 0px;
+  }
+}
+/* -------------------------------- end of flex.css------------------------------------------ */

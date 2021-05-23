@@ -1,0 +1,102 @@
+/* Default Settings */
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Divide the body into three parts */
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+  min-height: 1000px;
+}
+/* Divide the header into two parts */
+
+header {
+  background-color: rgba(0, 0, 0, 0.89);
+  display: grid;
+  grid-template-columns: 72% 28%;
+}
+/* Style of the heading1 */
+
+h1 {
+  font-size: 30px;
+  padding-left: 20px;
+  padding-top: 13px;
+  color: white;
+  font-family: "Chilanka", cursive;
+}
+/* Style of the navegation bar */
+
+nav {
+  font-size: 50px;
+} 
+/* Styles of the list for the navegation bar */
+
+li {
+  display: inline-block;
+}
+li a {
+  text-decoration: none;
+  padding: 5px;
+  margin: 20px;
+  color: white;
+  font-size: 14px;
+  font-family: "Chilanka", cursive;
+}
+/* main Styles and Settings */
+main {
+  background-color: whitesmoke;
+  max-width: 1000px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+/* footer Styles and Settings  */
+footer {
+  background-color: rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+/* icon Styles and Settings */
+i {
+  color: white;
+}
+.fa-copyright {
+  padding-top: 34px;
+  padding-left: 10px;
+}
+.fa-facebook-official {
+  padding-top: 34px;
+}
+footer div a {
+  padding: 5px;
+  margin: 20px;
+}
+
+
+/* Responsive Settings and @media*/
+@media all and (max-width: 1300px) {
+  li a {
+    padding: 15px;
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 470px) {
+  li a {
+    font-size: 10px;
+  }
+}
+@media all and (max-width: 400px) {
+  li a {
+    padding: 5px;
+  }
+}
+@media all and (max-width: 300px) {
+  li a {
+    padding: 1px;
+  }
+}
+ /* End of mesho.css */

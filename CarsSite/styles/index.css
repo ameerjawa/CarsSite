@@ -1,0 +1,65 @@
+/* ------------------------------------- Styles------------------------------------- */
+/* Styles for the audi class heading*/
+.audi {
+  text-align: center;
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+  font-family: "Chilanka", cursive;
+}
+/* Styles for the paragraph*/
+p {
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 100;
+}
+/* Styles for the heading2*/
+h2 {
+  font-size: 25px;
+  font-family: "Chilanka", cursive;
+}
+
+/* Responsive Settings and @media*/
+
+@media all and (max-width: 300px) {
+  header {
+    display: grid;
+    grid-template-columns: 55% 45%;
+  }
+}
+@media all and (max-width: 570px) {
+  header {
+    height: 170px;
+  }
+  main {
+    margin-top: 0;
+  }
+}
+@media all and (max-width: 300px) {
+  body {
+    display: grid;
+    grid-template-rows: 5% 85% 10%;
+  }
+}
+@media all and (max-width: 150px) {
+  body {
+    display: grid;
+    grid-template-rows: 5% 85% 10%;
+  }
+}
+@media all and (max-width: 1090px) {
+  header {
+    height: 180px;
+  }
+  main {
+    margin-top: 60px;
+  }
+}
+@media all and (max-width: 425px) {
+  footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+/* ---------------------------------- end of index.css---------------------------------------- */
